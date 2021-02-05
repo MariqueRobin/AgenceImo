@@ -1,4 +1,292 @@
+/* Partie génrale page */
 *{
     margin: 0;
+    padding: 0; 
+    font-family: "Montserrat", sans-serif;
+}
+
+span{
+    color: gold;
+    font-weight: lighter;
+}
+/* partie Header*/
+header {
+    background-color: #333;
+    height: 10vh;
+    padding: 0rem 1.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#couronne{
+    color: yellow;
+}
+
+h1{
+    color: white;
+    font-family: "Long Cang", cursive;
+    font-size: 2.5rem;
+}
+
+nav{
+    margin-left: auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li {
+    padding: 1.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0;
     padding: 0;
+}
+
+a:hover{
+    color: gold;
+}
+
+/* Section1 : Présentation*/
+
+.section1{
+    height: 50rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-image: url(./img/frame.jpg);
+    background-size: cover;
+}
+
+.section1 div{
+    text-align: center;
+    width: 50%;
+    margin-top: 12rem;
+}
+
+h2{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.section1 p{
+    font-size: 2rem;;
+}
+
+/* Section2 : Nos offres*/
+
+#offres{
+    background-color: rgb(223, 223, 223);
+    padding: 5rem 0;
+}
+
+#offres h3{
+    font-weight: lighter;
+    font-size: 2rem;
+    margin-left: 2rem;
+    padding-top: 2rem;
+}
+
+.container {
+    display: flex;
+    width: auto;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+hr{
+    width: 4rem;
+    height: 0.025rem;
+    background-color: black;
+}
+
+.container div{
+    background-color: white;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 25rem;
+    line-height: 3rem;
+    padding-bottom: 1rem;
+}
+
+.container div img{
+    height: auto;
+    width: 25rem;
+}
+
+/* Section 3 : Notre équipe*/
+
+#equipe{
+    display: flex;
+}
+
+.image{
+    background-image: url(./img/team.jpg);
+    background-size: cover;
+    height: 30rem;
+    width: 50%;
+}
+
+#equipe div{
+    background-color: #333;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding:5rem;
+}
+
+
+#equipe div h3{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+#equipe div p{
+    font-size: 2rem;
+}
+
+/* Section 4 : Commentaires*/
+
+.commentaires{
+    background-color: rgb(223, 223, 223);
+    padding-bottom: 2rem;
+}
+
+.commentaires h3{
+    font-weight: lighter;
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-left: 2.30rem;
+}
+
+.personnes{
+    background-color: white;
+    display: flex;
+    margin: 2rem auto;
+    border-radius: 0.25rem;
+    width: 95%;
+    align-items: center;
+    height: 10rem;
+    justify-content: space-around;
+}
+
+.personnes p{
+    display: flex;
+    padding: 0.1rem 1rem;
+    width: 95%;
+}
+
+.personnes i{
+    padding: 0.25rem;
+}
+
+.personnes img{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 100rem;
+}
+
+.jean{
+    display: flex;
+    flex-direction: column;  
+    padding: 1rem;
+}
+
+.arthur{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.julie{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+/* Section 5 : Contact*/
+
+#contact{
+    display: flex;
+    background-color: #333;
+    padding: 3rem 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulaire h3{
+    font-weight: lighter;
+    font-size: 3rem;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.formulaire{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+input{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 0.50rem;
+    background: none;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom-style: ridge;
+    resize: none;
+    color: rgb(223, 223, 223);
+}
+
+button{
+    border-radius: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    border: none;
+    background-color: goldenrod;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+button:hover{
+    background-color: white;
+    color:goldenrod;
+    ;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    background-color: #222222;
+    color: white;
+    height: 7rem;
+    align-items: center;
+    justify-content: center;
 }
