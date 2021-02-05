@@ -135,8 +135,9 @@ hr{
 .image{
     background-image: url(./img/team.jpg);
     background-size: cover;
-    height: 30rem;
+    height: auto;
     width: 50%;
+    background-position: center;
 }
 
 #equipe div{
@@ -249,7 +250,6 @@ form{
 }
 
 input{
-    width: 100%;
     padding: 1rem;
     margin-bottom: 0.50rem;
     background: none;
@@ -289,4 +289,119 @@ footer{
     height: 7rem;
     align-items: center;
     justify-content: center;
+}
+
+
+/*¨MOBILE*/
+
+@media screen and (min-width: 300px) and (max-width: 768px){
+
+    /* Adaptation de l'header */
+
+    header{
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav{
+       margin-left: 0;
+       width: 80%;
+       padding-bottom: 3rem;
+    }
+
+    ul{
+        flex-direction: column;
+    }
+
+    li{
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        border-bottom-style: ridge;
+        width: 100%;
+        text-align: center;
+        resize: none;
+        color: rgb(223, 223, 223);
+    }
+
+    /* Adaptation de section 1 */
+
+    .section1 {
+        overflow: hidden;
+        height: 20rem;
+    }
+    
+    h2{
+        font-size: 1.5rem;
+    }
+
+    .section1 div{
+        margin-top: 6rem;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    /* Adaptation de section 2 */
+
+    #offres{
+        text-align: center;
+    }
+
+    #offres h3{
+        padding: auto;
+        font-size: 2em;
+        margin-left: 0rem;
+        padding: 0.5rem;
+    }
+
+    .container {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .container div{
+        margin: 3rem;
+    }
+    /* Adaptation de section 3 */
+
+    #equipe{
+        flex-flow: column nowrap;
+    }
+
+    #equipe div {
+        width: auto;
+        padding: 2rem;
+    }
+
+    #equipe div h3{
+        font-size: 1.5rem;
+    }
+
+    #equipe div p{
+        font-size: 1rem;
+    }
+
+    .image{
+        order: 1;
+        height: 15rem;
+    }
+
+    /* Adaptation section 4 */
+
+    .personnes{
+        flex-flow: column nowrap;
+        height: auto;
+    }
+    .arthur{
+        order: 1;
+    }
+
+    /* Adaotation section 5 */
+
+    #contact h3{
+        font-size: 1.5rem;
+    }
+    .formulaire{
+        width: 80%;
+    }
 }
